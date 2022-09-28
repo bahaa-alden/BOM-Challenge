@@ -1,0 +1,139 @@
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: rgb(24, 27, 40);
+}
+
+.form {
+  margin: 20px 0 20px 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background: rgb(192, 192, 192);
+  border-radius: 10px;
+}
+.form .inp {
+  height: 40px;
+  width: 475px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+}
+.tasks {
+  background: rgb(192, 192, 192);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.task {
+  width: 580px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  background: white;
+  position: relative;
+}
+.btn {
+  border: none;
+  padding: 8.2px 12px;
+  background: red;
+  border-radius: 11px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.task .p {
+  font-size: 17px;
+  word-break: break-all;
+}
+.delete {
+  border: none;
+  padding: 8.2px 12px;
+  background: red;
+  border-radius: 11px;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+}
+.fa-star {
+  padding: 15px;
+}
+@media (max-width: 663px) {
+  .task {
+    width: 466px;
+  }
+  .fa-star {
+    padding: 15px;
+  }
+  .form .inp {
+    height: 40px;
+    width: 374px;
+  }
+  .delete,
+  .btn {
+    padding: 6px 8px;
+    font-size: 17px;
+  }
+}
+.dd {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+@media (max-width: 543px) {
+  .task {
+    width: 367px;
+  }
+  .fa-star {
+    padding: 15px;
+  }
+  .form .inp {
+    height: 40px;
+    width: 272px;
+  }
+  .delete,
+  .btn {
+    padding: 6px 8px;
+    font-size: 17px;
+  }
+}
+@media (max-width: 443px) {
+  .task {
+    width: 270px;
+  }
+  .fa-star {
+    padding: 15px;
+  }
+  .form .inp {
+    height: 40px;
+    width: 183px;
+  }
+  .delete,
+  .btn {
+    padding: 5px 5px;
+    font-size: 17px;
+  }
+}
